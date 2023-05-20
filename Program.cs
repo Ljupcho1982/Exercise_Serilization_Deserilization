@@ -55,7 +55,7 @@ List<Employee> One = new List<Employee>()
 
 XmlSerializer serializer = new XmlSerializer(typeof(List<Employee>));
 
-using (TextWriter writer = new StreamWriter(@"C:\Vezhbi_Full_Stack - Boban\Vezhbi C#\20.05.2023\primer.xml"))
+using (TextWriter writer = new StreamWriter(@"C:\Vezhbi_Full_Stack - Boban\Vezhbi C#\20.05.2023\primerdzeno.xml"))
 {
 
     serializer.Serialize(writer, One);
@@ -74,9 +74,16 @@ using (FileStream fileStream = new FileStream(@"C:\Vezhbi_Full_Stack - Boban\Vez
     if (emp != null)
     {
         foreach (Employee employee in emp)
+
+
         {
 
+
+
             var under = employee.Suordinared;
+
+
+
 
             foreach (Employee employee1 in under)
             {
